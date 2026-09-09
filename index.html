@@ -105,16 +105,41 @@
   <section class="about" id="about">
     <div class="container">
       <div class="about-grid">
-        <div class="about-visual">
-          <div class="about-img-stack">
-            <div class="about-img-card about-img-main">
-              <img src="assets/images/menu/menu_poha_1788940780094.jpg" alt="Freshly made homemade poha" />
+        <div class="about-visual" id="aboutChefVisual">
+          <div class="about-chef-showcase">
+            <!-- Ambient glow backdrop -->
+            <div class="chef-ambient-glow" aria-hidden="true"></div>
+            <div class="chef-frame-backdrop" aria-hidden="true"></div>
+
+            <!-- Chef Portrait with Ken Burns Animation -->
+            <div class="chef-portrait-card" id="chefPortraitCard">
+              <div class="chef-kenburns-container">
+                <img
+                  src="assets/images/chef/chef-homestead-roots.png"
+                  alt="Homestead Roots Chef preparing fresh vegetarian food with love in her kitchen"
+                  class="chef-kenburns-img"
+                  loading="lazy"
+                />
+                <div class="chef-photo-overlay" aria-hidden="true"></div>
+                <div class="chef-caption-tag">
+                  <span class="chef-caption-sparkle">✨</span>
+                  <span class="chef-caption-text">Chef at Heart · Cooked with Love</span>
+                </div>
+              </div>
             </div>
-            <div class="about-img-card about-img-accent">
-              <img src="assets/images/menu/menu_pasta_1788940919417.jpg" alt="Homemade pasta" />
+
+            <!-- Parallax Floating Accent: Fresh Homestyle Dish -->
+            <div class="chef-dish-badge" id="chefDishBadge">
+              <img src="assets/images/menu/menu_poha_1788940780094.jpg" alt="Fresh homestyle dish" class="dish-thumb" />
+              <div class="dish-badge-info">
+                <strong>Freshly Prepared</strong>
+                <span>Homestyle Flavours</span>
+              </div>
             </div>
-            <div class="about-badge-float">
-              <img src="assets/images/branding/logo-badge.png" alt="Homestead Roots Logo" class="about-emblem-mini" />
+
+            <!-- Parallax Floating Accent: Quality Badge -->
+            <div class="about-badge-float chef-brand-badge" id="chefBrandBadge">
+              <img src="assets/images/branding/logo-badge.png" alt="Homestead Roots" class="about-emblem-mini" />
               <div>
                 <strong>Homestead Roots</strong>
                 <small>100% Homemade Products</small>
@@ -132,6 +157,11 @@
           <p class="about-text">
             Every dish we prepare carries the warmth of home cooking — because we believe food should nourish not just your body, but your soul. From comforting breakfasts to celebratory cakes and catering spreads, everything is made fresh, every single day.
           </p>
+
+          <div class="chef-quote-pill">
+            <span class="quote-heart">❤️</span>
+            <em>“Good food, happy mood. We prepare every meal with the same warmth and pure ingredients we serve our own family.”</em>
+          </div>
 
           <div class="about-pillars">
             <div class="pillar">
