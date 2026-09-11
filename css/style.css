@@ -249,41 +249,54 @@ ul { list-style: none; }
   text-decoration: none;
 }
 
-.nav-logo-img {
-  height: 48px;
-  width: auto;
-  object-fit: contain;
-  border-radius: var(--radius-sm);
-  transition: var(--transition);
-  display: block;
-}
-
-.nav-logo:hover .nav-logo-img {
-  transform: scale(1.03);
-}
-
-.logo-mark svg { width: 40px; height: 40px; }
-
 .logo-text {
   display: flex;
   flex-direction: column;
-  line-height: 1.15;
+  line-height: 1.18;
 }
 
 .logo-name {
   font-family: var(--font-display);
-  font-size: 1.15rem;
+  font-size: 1.35rem;
   font-weight: 700;
   color: var(--chocolate);
-  letter-spacing: 0.01em;
+  letter-spacing: -0.01em;
+  transition: var(--transition);
+}
+
+.nav-logo:hover .logo-name {
+  color: var(--brown);
+}
+
+.logo-subline {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.08rem;
 }
 
 .logo-tagline {
-  font-size: 0.65rem;
-  font-weight: 600;
-  letter-spacing: 0.15em;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--brown-light);
+  color: var(--brown-mid);
+}
+
+.logo-dot {
+  font-size: 0.75rem;
+  color: var(--gold);
+  line-height: 1;
+}
+
+.logo-by {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 600;
+  font-size: 0.82rem;
+  color: var(--brown);
+  letter-spacing: 0.01em;
+  text-transform: none;
 }
 
 /* Nav Links */
@@ -2056,7 +2069,9 @@ ul { list-style: none; }
 }
 
 @media (max-width: 480px) {
-  .nav-logo-img { height: 38px; }
+  .logo-name { font-size: 1.15rem; }
+  .logo-tagline { font-size: 0.58rem; letter-spacing: 0.1em; }
+  .logo-by { font-size: 0.72rem; }
   .hero-emblem-img { width: 105px; height: 105px; }
   .hero-title { font-size: 2.2rem; }
   .hero-buttons { flex-direction: column; align-items: stretch; }
